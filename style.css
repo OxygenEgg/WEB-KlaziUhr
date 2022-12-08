@@ -1,0 +1,53 @@
+html, body {
+    font-family: 1em Helvetica, Trebuchet, sans-serif;
+    background-image: linear-gradient(#5e5eff, #ff7ff4);
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+}
+button {
+    color: #ffffff;
+    background-color: #28265b;
+    border: none;
+    border-radius: 5px;
+}
+#mainPortion {
+    filter: invert(100%);
+}
+#clockDiv {
+    position: relative;
+    margin: auto;
+    width: 80vh;
+    height: 80vh;
+    padding-top: 5%;
+}
+.clock {
+    position: absolute;
+}
+#controls {
+    position: absolute;
+    top: 94%;
+    left: 1%;
+    opacity: 1;
+}
+.controls {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+.fadeOut {
+    animation: fadeOut 1s linear forwards;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.fadeIn {
+    animation: fadeIn 1s linear forwards;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

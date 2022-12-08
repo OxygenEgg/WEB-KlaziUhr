@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Marcels Klassenzimmeruhr</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="colorWheel/src/coloris.css">
+    <link rel="shortcut icon" href="icon.png">
+    <script type="text/javascript" src="jQuery-3.6.0.js"></script>
+    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="controls.js"></script>
+    <script type="text/javascript" src="colorWheel/src/coloris.js"></script>
+</head>
+<body>
+    <div id="mainPortion" onclick="toggleControls()">
+        <div id="clockDiv">
+            <img src="clock01/clockFace.svg" id="clockFace" class="clock" alt="bild konnte nicht geladen werden">
+            <img src="clock01/hourHand.svg" id="hourHand" class="clock" alt="bild konnte nicht geladen werden">
+            <img src="clock01/minuteHand.svg" id="minuteHand" class="clock" alt="bild konnte nicht geladen werden">
+            <img src="clock01/secondHand.svg" id="secondHand" class="clock" alt="bild konnte nicht geladen werden">
+        </div>
+    </div>
+    <div id="controls">
+        <button type="button" class="controls" onclick="toggleFullscreen()">Vollbild Umschalten</button>
+        <button type="button" class="controls" onclick="invertColor()">Uhrfarbe Invertieren</button>
+    </div>
+</body>
+</html>
